@@ -1,0 +1,361 @@
+@import url('https://fonts.cdnfonts.com/css/rosa-sans');
+                
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+body {
+    font-family: "Rosa Sans", sans-serif;
+}
+/* Nav menu */
+nav {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+/* Nav link */
+nav a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 12px 18px;
+}
+
+nav a:hover {
+    background-color: #ffde3d;
+    border-radius: 12px;
+}
+
+hr {
+    border: 1px solid #efefef;
+}
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 36px;
+    padding: 12px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 26px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+/* Header paragraph */
+header p {
+    font-size: 16px;
+}
+/* Site title */
+#site-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* Menu */
+#nav-menu {
+    text-align: center;
+}
+/* Slider */
+#slider article {
+    padding: 12px;
+}
+
+#slider figure {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    display: none;
+}
+
+#slider figure.active {
+    display: block;
+}
+
+#slider figure img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    object-position: center;
+}
+
+#slider figcaption {
+    padding: 12px;
+}
+/* Testi image */
+.img-testi {
+    border: 2px solid var(--white);
+    border-radius: 10000px;
+    width: 10%;
+    height: auto;
+    box-shadow: 0 3px 5px #00000021;
+}
+/* Caption */
+.caption-profile {
+    margin: 18px 0;
+    display: flex;
+    column-gap: 24px;
+}
+
+.caption-profile img {
+    border-radius: 100%;
+}
+
+.caption-profile span {
+    display: block;
+}
+
+.caption-profile-name {
+    font-weight: 600;
+}
+
+.caption-profile-info {
+    color: #555;
+}
+/* Benefits */
+.benefits h3 {
+    text-align: center;
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
+
+.benefits-info {
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 18px;
+}
+
+.benefits-info span {
+    display: block;
+    align-self: center;
+    background-color: #ffde3d;
+    border-radius: 100%;
+    padding: 12px 18px;
+    font-size: 16px;
+}
+/* Contact */
+#contact {
+    padding: 24px;
+    background-color: #eeeeee;
+}
+/* Contact title */
+#contact h3 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+/* Contact form */
+#contact form {
+    margin-top: 56px;
+}
+
+.cnt-form {
+    flex-direction: column;
+    display: flex;
+  }
+
+/* Start form */
+.form-input-wrapper {
+    margin-bottom: 21px;
+}
+
+.form-input-wrapper label,
+.form-input-wrapper input,
+.form-input-wrapper select {
+    display: block;
+}
+
+.form-input-wrapper input,
+.form-input-wrapper select {
+    padding: 12px 18px;
+    width: 100%;
+}
+
+.form-input-wrapper a {
+    display: inline-block;
+    width: 100%;
+    padding: 18px 12px;
+    text-align: center;
+    background-color: #ffde3d;
+    color: #222222;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4.75rem;
+}
+/* Form error */
+form .error {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: red;
+}
+/* End form */
+
+.important-highlight {
+    color: #ff4545;
+  }
+
+/* Package */
+#package {
+    background-color: #eeeeee;
+}
+
+#package h2 {
+    padding-top: 18px;
+}
+
+.package-wrapper {
+    background-color: #ffffff;
+    padding: 18px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.package-icon span {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #ffde3d;
+    border-radius: 100%;
+}
+
+.package-info {
+    margin: 12px 0;
+}
+/* Closing */
+#closing {
+    text-align: center;
+    padding: 12px;
+}
+
+#closing div {
+    margin-top: 36px;
+}
+/* Closing footer */
+#closing a {
+    padding: 12px 18px;
+    border: none;
+    background-color: #ffde3d;
+    color: #222222;
+    margin-bottom: 24px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4.75rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 24px 12px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+}
+/* Brand footer */
+.footer-brand {
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Screen mobile/responsive */
+@media screen and (min-width:568px) {
+    .package-wrapper {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    #slider {
+        display: flex;
+        justify-content: space-between;
+        padding: 36px;
+        column-gap: 8px;
+    }
+
+    #slider article,
+    #slider figcapture {
+        padding: 0;
+    }
+
+    #slider figure,
+    #contact {
+        border-radius: 10px;
+    }
+
+    #slider figure {
+        overflow: hidden;
+    }
+
+    #slider aside {
+        align-self: self-start;
+    }
+
+    .img-testi {
+        flex: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    .caption-profile div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benefits-info {
+        align-items: center;
+    }
+
+    .package-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 56px;
+        padding: 36px;
+    }
+
+    .package-wrapper article {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    .package-info {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    #closing {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    footer {
+        padding: 36px;
+    }
+
+    .footer-brand {
+        margin-bottom: 36px;
+    }
+}
